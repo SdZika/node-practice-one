@@ -1,46 +1,64 @@
-//for loop
 
-// for (let i = 0; i < 5; i++) {
-//   console.log(`Hello ${i}`);
-// }
+const users = [
+  {
+    id: 1,
+    name: "Alice Johnson",
+    email: "alice@example.com",
+    role: "admin",
+    profile: {
+      age: 32,
+      joined: new Date("2022-04-12"),
+      skills: ["React", "Node.js", "GraphQL"]
+    },
+    isActive: true,
+    login() {
+      console.log(`${this.name} has logged in.`);
+    }
+  },
+  {
+    id: 2,
+    name: "Bob Smith",
+    email: "bob@example.com",
+    role: "user",
+    profile: {
+      age: 25,
+      joined: new Date("2023-02-01"),
+      skills: ["HTML", "CSS", "JavaScript"]
+    },
+    isActive: false,
+    login() {
+      console.log(`${this.name} has logged in.`);
+    }
+  },
+  {
+    id: 3,
+    name: "Clara Davis",
+    email: "clara@example.com",
+    role: "user",
+    profile: {
+      age: 28,
+      joined: new Date("2024-01-15"),
+      skills: ["Vue", "TypeScript", "TailwindCSS"]
+    },
+    isActive: true,
+    login() {
+      console.log(`${this.name} has logged in.`);
+    }
+  }
+];
 
-// // while loop
+const randomSkills = (arr) => {
 
-// let i = 0;
-// while (i < 5) {
-//   console.log(`Hello ${i}`);
-//   i++;
-// }   
+  for (let user of users) {
 
-// do while loop
+    const randomSkills = user.profile.skills.sort(() => Math.random() - 0.5)
+    user.profile.skills = randomSkills;
+  
+    
+  }
 
-// let j = 0;
-// do {
-//   console.log(`Hello ${j}`);
-//   j++;
-// } while (j < 5);
+  console.log(arr)
+}
 
-// // for of loop
-// const letters = ['a', 'b', 'c'];
-// for (const letter of letters) {
-//   console.log(`Hello ${letter}`);
-// }
+randomSkills(users)
 
-// // for in loop
-
-
-// const person = { name: 'John', age: 30 };
-
-// console.log(`Hello ${person.name}`);
-
-// for (const key in person) {
-//   console.log("Hello: ", key, person[key]);
-// }
-
-const array = [1, 2, 3, 4, 5];
-
-const newArray = array.map((item) => {
-  return item;
-});
-
-console.log(newArray);
