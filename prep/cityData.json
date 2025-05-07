@@ -1,0 +1,33 @@
+{
+          "name": "San Francisco",
+          "state": "California",
+          "country": "USA",
+          "coordinates": {
+            "latitude": 37.7749,
+            "longitude": -122.4194
+          },
+          "population": 815000,
+          "neighborhoods": [
+            {
+              "name": "Mission District",
+              "averageRent": 3200,
+              "landmarks": ["Dolores Park", "Mission Dolores"]
+            },
+            {
+              "name": "SOMA",
+              "averageRent": 3700,
+              "landmarks": ["Oracle Park", "SFMOMA"]
+            },
+            {
+              "name": "Sunset",
+              "averageRent": 2900,
+              "landmarks": ["Ocean Beach", "Golden Gate Park"]
+            }
+          ],
+          "economy": {
+            "majorIndustries": ["Tech", "Tourism", "Finance"],
+            "unemploymentRate": 2.9
+          },
+          "isCoastal": true
+        }
+        
